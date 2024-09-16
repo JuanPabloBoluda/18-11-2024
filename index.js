@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
 const anoNascimento = 2005;
 let idade = 18;
 let anoAtual = 2023;
@@ -22,14 +25,15 @@ const listaDeDestinos = new Array(
   "Tokyo" 
 );
 
-const idadeComprador = 17;
+var nomeComprador = entrada("Digite seu nome: ");
+var idadeComprador = entrada("Qual a sua idade?");
 
 if(idadeComprador >=18){
+  console.log ("Olá senhor(a) " + nomeComprador);
   console.log("comprador maior de idade");
   console.log("destinos disponíveis: " + listaDeDestinos);
 } else{
-
-(idadeComprador < 18){
+  console.log ("Olá senhor(a) " + nomeComprador);
   console.log("Não é permitido comprar a passagem para menores de idade");
   console.log ("você é menor de idade");
 }
