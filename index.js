@@ -36,7 +36,7 @@ while (login != loginCerto || senha != senhaCerta){
   login = entrada("Qual é o seu username?");
   senha = entrada("Qual é a sua senha?");
 }
-  
+
 var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("Qual a sua idade?");
 
