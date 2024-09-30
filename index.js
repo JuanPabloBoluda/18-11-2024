@@ -25,8 +25,21 @@ const listaDeDestinos = new Array(
   "Tokyo" 
 );
 
+const loginCerto = "Juan";
+const senhaCerta = 1234;
+
+var login = entrada("Qual é o seu username?");
+var senha = entrada("Qual é a sua senha?");
+
+while (login != loginCerto || senha != senhaCerta){
+  console.log ("Login ou senha incorretos");
+  login = entrada("Qual é o seu username?");
+  senha = entrada("Qual é a sua senha?");
+}
+  
 var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("Qual a sua idade?");
+
 
 if(idadeComprador >=18){
   console.log ("Olá senhor(a) " + nomeComprador);
