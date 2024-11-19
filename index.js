@@ -78,8 +78,10 @@ if(idadeComprador >=18){
     contador++
 
   }
-  var destino = entrada("Digite o numero que corresponde ao destino selecionado (0-5): ");
+  var destino = entrada("Digite o numero que corresponde ao destino selecionado (1-5): ");
   console.log (`destino selecionado foi: ${listaDeDestinos[destino]}`);
 }
 
-
+else {
+console.log(`Idade informada é ${idadeComprador}, menor que 18. Não é permitido visualizar a lista de destinos.`);
+}
